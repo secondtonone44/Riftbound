@@ -70,23 +70,23 @@ a { color: inherit; }
   height: 100%;
   object-fit: cover;
   object-position: center;
-  filter: saturate(.55) contrast(1.12) brightness(.55);
-  transform: scale(1.03);
+  filter: saturate(.92) contrast(1.04) brightness(.82);
+  transform: scale(1.01);
 }
 .hero-wash {
   position: absolute;
   z-index: -3;
   inset: 0;
   background:
-    linear-gradient(90deg, #07090a 0%, rgba(7,9,10,.96) 31%, rgba(7,9,10,.42) 58%, rgba(7,9,10,.68) 100%),
-    linear-gradient(0deg, #07090a 0%, transparent 33%, rgba(7,9,10,.28) 100%);
+    linear-gradient(90deg, rgba(7,9,10,.84) 0%, rgba(7,9,10,.62) 25%, rgba(7,9,10,.08) 46%, rgba(7,9,10,.02) 100%),
+    linear-gradient(0deg, rgba(7,9,10,.76) 0%, transparent 27%, rgba(7,9,10,.18) 100%);
 }
 .hero-copy {
   position: absolute;
   z-index: 5;
   left: clamp(20px, 4vw, 68px);
   top: 50%;
-  width: min(42vw, 650px);
+  width: min(35vw, 540px);
   transform: translateY(-45%);
 }
 .kicker {
@@ -105,6 +105,7 @@ a { color: inherit; }
   font: 400 clamp(4.2rem, 7.4vw, 8rem)/.82 Georgia, 'Times New Roman', serif;
   letter-spacing: -.065em;
 }
+.hero h1 { font-size: clamp(3.8rem,5.5vw,6.6rem); }
 .hero h1 em, .cta h2 em { color: #e5c58f; font-style: italic; }
 .lede { max-width: 500px; color: #c1baad; font-size: 1rem; line-height: 1.75; }
 .actions { display: flex; gap: 12px; margin: 34px 0; }
@@ -219,8 +220,10 @@ footer { padding: 27px clamp(20px,4vw,68px); display: flex; justify-content: spa
 @media(max-width:720px) {
   .topbar nav a:not(:last-child) { display: none; }
   .hero { height: 920px; min-height: 920px; }
-  .hero-copy { top: 124px; right: 20px; width: auto; transform: none; }
-  .hero h1 { font-size: clamp(3.5rem,15vw,5.6rem); }
+  .hero-copy { top: 124px; right: 20px; width: calc(100vw - 40px); max-width: none; transform: none; }
+  .hero h1 { font-size: clamp(2.6rem,10.8vw,4.2rem); letter-spacing: -.08em; }
+  .hero .lede { width: 320px; max-width: 84vw; font-size: .92rem; overflow-wrap: anywhere; }
+  .hero-world { object-position: 56% center; }
   .lede { max-width: 440px; }
   .roster { left: 10px; right: 10px; top: 485px; bottom: 42px; }
   .portrait-siege { left: 0; width: 62%; height: 100%; }
