@@ -13,7 +13,7 @@
 <body>
   <header class="topbar">
     <a class="brand" href="#top"><span>R</span> RIFTBOUND</a>
-    <nav><a href="#characters">Characters</a><a href="#gameplay">Gameplay</a><a href="#links">Links</a></nav>
+    <nav><a href="#characters">Characters</a><a href="#gameplay">Gameplay</a><a href="#enemies">Enemies</a><a class="nav-cta" href="#links">Follow</a></nav>
   </header>
 
   <main>
@@ -21,26 +21,33 @@
       <img class="hero-world" src="assets/riftbound-key-art-v2.png" alt="Glass Heretic, Siege Sexton, and Shroudweaver fighting the Bellbound, Candle Widow, and Coffin Stag in the Drowning Parish">
       <div class="hero-wash"></div>
       <div class="hero-copy">
-        <p class="kicker">Single-player action roguelite</p>
-        <h1>FIGHT.<br>UPGRADE.<br><em>SURVIVE.</em></h1>
-        <p class="lede">Choose a character, fight through enemy waves, and build a stronger loadout before rising water cuts off the map.</p>
-        <div class="actions"><a class="primary" href="#characters">See the characters</a><a class="secondary" href="#gameplay">See gameplay</a></div>
+        <p class="kicker">Action roguelite · PC</p>
+        <h1>Build your<br>loadout.<br><em>Beat the flood.</em></h1>
+        <p class="lede">Fight through enemy waves, collect upgrades, and climb through a flooded city before the water reaches you.</p>
+        <div class="actions"><a class="primary" href="#gameplay">See how it plays</a><a class="secondary" href="#links">Follow development</a></div>
         <p class="release">IN DEVELOPMENT <i></i> PC</p>
       </div>
 
       <div class="scroll-mark">SCROLL TO DESCEND <span>↓</span></div>
     </section>
 
+    <section class="quick-facts" aria-label="Game information">
+      <div><small>GENRE</small><strong>Action roguelite</strong></div>
+      <div><small>PLAYERS</small><strong>Single-player</strong></div>
+      <div><small>PLATFORM</small><strong>Windows PC</strong></div>
+      <div><small>STATUS</small><strong>In development</strong></div>
+    </section>
+
     <section class="manifesto" id="characters">
-      <p class="kicker">Playable characters</p>
+      <p class="kicker">Choose a character</p>
       <div class="manifesto-grid">
-        <h2>CHOOSE YOUR<br>PLAY STYLE.</h2>
-        <p>Every character starts with a different weapon and ability. Pick the one that suits you, then change the build with upgrades found during the run.</p>
+        <h2>Three weapons.<br>Three play styles.</h2>
+        <p>Each character starts with a different weapon and movement ability. During the run, you decide which upgrades turn that starting kit into a complete build.</p>
       </div>
-      <div class="kits">
-        <article><span>GLASS HERETIC · RANGED</span><h3>Redirect energy beams.</h3><p>Use the crystal weapon to change the beam's path and hit several groups of enemies with one attack.</p></article>
-        <article><span>SIEGE SEXTON · HEAVY WEAPON</span><h3>Fire a mobile cannon.</h3><p>Move the Cathedral Engine into position, load it, and fire powerful shots through packed enemy waves.</p></article>
-        <article><span>SHROUDWEAVER · CLOSE RANGE</span><h3>Fight with giant shears.</h3><p>Cut through nearby enemies and summon a duplicate that repeats your attacks.</p></article>
+      <div class="character-grid">
+        <article class="character-card"><div class="character-image"><img src="assets/glass-heretic-portrait.png" alt="Glass Heretic holding his crystal weapon"><span>RANGED</span></div><div class="character-copy"><small>GLASS HERETIC</small><h3>Redirect energy beams.</h3><p>Change the beam's path and hit several groups of enemies with one attack.</p></div></article>
+        <article class="character-card featured"><div class="character-image"><img src="assets/siege-sexton-portrait.png" alt="Siege Sexton beside the Cathedral Engine"><span>HEAVY WEAPON</span></div><div class="character-copy"><small>SIEGE SEXTON</small><h3>Fire a mobile cannon.</h3><p>Move the Cathedral Engine into position and fire through packed enemy waves.</p></div></article>
+        <article class="character-card"><div class="character-image"><img src="assets/shroudweaver-portrait.png" alt="Shroudweaver holding her giant shears"><span>CLOSE RANGE</span></div><div class="character-copy"><small>SHROUDWEAVER</small><h3>Fight with giant shears.</h3><p>Cut through nearby enemies and summon a duplicate that repeats your attacks.</p></div></article>
       </div>
     </section>
 
@@ -50,15 +57,24 @@
         <div class="frame-copy"><span>THE DROWNING PARISH</span><strong>Explore before<br>the water rises.</strong></div>
       </div>
       <div class="gameplay-notes">
-        <p class="kicker">How a run works</p>
-        <h2>LOOT.<br>UPGRADE.<br>KEEP MOVING.</h2>
+        <p class="kicker">How each run works</p>
+        <h2>Explore, upgrade,<br>keep moving.</h2>
         <p>Explore lower districts for more rewards, or climb early to stay ahead of the water. Your route decides which upgrades and enemies you meet.</p>
         <ul><li><b>01</b> Choose a route through connected districts</li><li><b>02</b> Combine weapons, items, and upgrades</li><li><b>03</b> Reach the summit and defeat the boss</li></ul>
       </div>
     </section>
 
-    <section class="threats">
-      <div class="threat-head"><div><p class="kicker">Enemies</p><h2>WATCH THEIR<br>ATTACKS.</h2></div><p>Each enemy has a clear attack pattern. Learn when to dodge, when to keep your distance, and which target to deal with first.</p></div>
+    <section class="run-loop" aria-label="What happens during a run">
+      <p class="kicker">A run in three steps</p>
+      <div class="loop-grid">
+        <article><b>01</b><h3>Fight</h3><p>Clear enemy waves and protect the route ahead.</p></article>
+        <article><b>02</b><h3>Build</h3><p>Choose weapons, items, and upgrades that work together.</p></article>
+        <article><b>03</b><h3>Climb</h3><p>Reach higher districts before the flood closes the lower map.</p></article>
+      </div>
+    </section>
+
+    <section class="threats" id="enemies">
+      <div class="threat-head"><div><p class="kicker">Enemy types</p><h2>Learn the enemies.</h2></div><p>Every enemy has a clear attack pattern. Learn when to dodge, when to keep your distance, and which target to deal with first.</p></div>
       <div class="enemy-row">
         <figure><img src="assets/bellbound-game.jpg" alt="Bellbound"><figcaption><b>THE BELLBOUND</b><span>A heavy enemy with a powerful charge.</span></figcaption></figure>
         <figure><img src="assets/candle-widow-game.jpg" alt="Candle Widow"><figcaption><b>CANDLE WIDOW</b><span>Creates dangerous areas that force you to move.</span></figcaption></figure>
@@ -67,9 +83,9 @@
     </section>
 
     <section class="cta" id="links">
-      <p class="kicker">Links</p>
-      <h2>FOLLOW<br><em>RIFTBOUND.</em></h2>
-      <p>Store and community pages will be linked here as soon as they are ready. You can already follow development or contact the developer below.</p>
+      <p class="kicker">News and community</p>
+      <h2>Follow <em>Riftbound.</em></h2>
+      <p>Steam and Discord links will appear here when those pages are ready. For now, follow the repository or contact the developer directly.</p>
       <div class="socials link-grid">
         <div class="platform-link unavailable"><small>STORE PAGE</small><span>STEAM</span><em>Coming soon</em></div>
         <div class="platform-link unavailable"><small>COMMUNITY</small><span>DISCORD</span><em>Coming soon</em></div>
