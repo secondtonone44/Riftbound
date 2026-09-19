@@ -295,6 +295,33 @@ footer a:hover { color: var(--paper); }
 .loop-grid h3 { margin: 58px 0 12px; font-size: 2.2rem; }
 .loop-grid p { max-width: 300px; margin: 0; color: var(--fog); font-size: .82rem; line-height: 1.65; }
 .cta h2 { line-height: .9; }
+.steam-hero {
+  width: min(360px,100%);
+  min-height: 70px;
+  margin-top: 28px;
+  padding: 12px 15px;
+  display: grid;
+  grid-template-columns: 42px 1fr auto;
+  align-items: center;
+  gap: 13px;
+  color: #fff;
+  background: linear-gradient(135deg,#1b3f5d,#112538);
+  border: 1px solid rgba(255,255,255,.28);
+  text-decoration: none;
+  box-shadow: 0 14px 36px rgba(0,0,0,.32);
+  transition: transform .2s,border-color .2s,background .2s;
+}
+.steam-hero:hover { transform: translateY(-2px); border-color: rgba(255,255,255,.58); background: linear-gradient(135deg,#24577f,#17324a); }
+.steam-logo { width: 38px; height: 38px; fill: currentColor; flex: 0 0 auto; }
+.steam-hero span { display: flex; flex-direction: column; gap: 2px; }
+.steam-hero small { font-size: .5rem; letter-spacing: .18em; opacity: .72; }
+.steam-hero strong { font: 400 1.42rem/1 Georgia,serif; letter-spacing: .08em; }
+.steam-hero em { color: rgba(255,255,255,.68); font-size: .58rem; font-style: normal; white-space: nowrap; }
+.compact-actions { margin: 14px 0 0; }
+.compact-actions a { padding: 11px 13px; font-size: .58rem; }
+.steam-card-title { display: flex; align-items: center; gap: 8px; }
+.steam-card-title .steam-logo { width: 20px; height: 20px; }
+.steam-legal { max-width: 760px; margin: 0 auto; padding: 0 20px 22px; color: #67645e; font-size: .5rem; line-height: 1.5; text-align: center; }
 
 @media(max-width:1050px) {
   .character-image { height: 400px; }
@@ -305,6 +332,11 @@ footer a:hover { color: var(--paper); }
   .topbar nav { gap: 10px; }
   .topbar nav a:not(.nav-cta) { display: none; }
   .hero h1 { font-size: clamp(3rem,12vw,4.1rem); }
+  .steam-hero { width: min(330px,calc(100vw - 40px)); grid-template-columns: 38px 1fr; }
+  .steam-hero em { grid-column: 2; }
+  .steam-logo { width: 34px; height: 34px; }
+  .compact-actions { gap: 8px; }
+  .compact-actions a { padding: 10px; }
   .manifesto h2,.gameplay h2,.threats h2,.cta h2 { max-width: 100%; font-size: clamp(2.2rem,9.4vw,3rem); line-height: .94; overflow-wrap: break-word; }
   .manifesto-grid,.manifesto-grid > p { min-width: 0; max-width: 100%; }
   .manifesto,.threats,.cta,.run-loop { width: 100vw; max-width: 100vw; padding-left: 20px; padding-right: 20px; overflow: hidden; }
