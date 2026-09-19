@@ -360,11 +360,11 @@ footer a:hover { color: var(--paper); }
 .character-image img.glass-modern,
 .character-image img.siege-modern {
   object-position: 35% center;
-  transform: scale(1.62);
+  transform: scale(1.85);
   transform-origin: 35% 65%;
 }
 .character-card:hover .character-image img.glass-modern,
-.character-card:hover .character-image img.siege-modern { transform: scale(1.67); }
+.character-card:hover .character-image img.siege-modern { transform: scale(1.9); }
 .gameplay-frame > img.combat-shot {
   object-position: center 48%;
   filter: saturate(.92) contrast(1.08);
