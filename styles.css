@@ -354,3 +354,18 @@ footer a:hover { color: var(--paper); }
   .loop-grid h3 { margin: 20px 0 10px; }
 }
 
+
+
+/* Current packaged-game imagery */
+.character-image img.glass-modern,
+.character-image img.siege-modern {
+  object-position: 35% center;
+  transform: scale(1.62);
+  transform-origin: 35% 58%;
+}
+.character-card:hover .character-image img.glass-modern,
+.character-card:hover .character-image img.siege-modern { transform: scale(1.67); }
+.gameplay-frame > img.combat-shot {
+  object-position: center 48%;
+  filter: saturate(.92) contrast(1.08);
+}
